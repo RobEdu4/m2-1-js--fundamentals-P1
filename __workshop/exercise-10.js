@@ -13,13 +13,16 @@ function exercise10() {
   //
   // Write code between the lines (below)
 
+
+
 for (let i = 1; i < 8; i++){
   let poundLayout = "";
   for (let j=0; j < i; j++){
-    poundLayout.push("#");
+    poundLayout += "#";
   }
   console.log(poundLayout);
 }
+
 
 
   // Write code between the lines (above)
