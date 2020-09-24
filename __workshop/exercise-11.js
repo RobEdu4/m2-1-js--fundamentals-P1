@@ -14,18 +14,49 @@ function exercise11() {
   // _#_#_#_#
   //
   // Write code between the lines (below)
-  // -----------------------------------------------------------------
-  // -----------------------------------------------------------------
+  let chessBoard = "";
+  let rowCount = 1;
+
+  for (let i = 1; i < 65; i++){
+    if(rowCount % 2 !== 0){
+      if (i % 2 !== 0){
+        chessBoard += "#";
+      } else if (i % 2 === 0){
+        chessBoard += "_";
+      }
+  }
+  if(rowCount % 2 === 0){
+    if (i % 2 === 0){
+      chessBoard += "#";
+    } else if (i % 2 !== 0){
+      chessBoard += "_";
+    }
+  }
+
+    if (i % 8 === 0){
+      chessBoard += "\n";
+      rowCount++;
+    }
+  }
+
+  console.log(chessBoard);
+
   // Write code between the lines (above)
-  //
-  //
-  //
-  //
-  //
-  //
+
+/*
+  for (let i = 2; i <= 10; i++){
+    if (i % 2 === 0){
+      console.log("#_#_#_#_");
+    } else {
+      console.log("_#_#_#_#");
+    }
+  }
 }
+*/
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-11
 
 module.exports = exercise11;
+
+}
