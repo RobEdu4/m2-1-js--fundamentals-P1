@@ -15,27 +15,29 @@ function exercise11() {
   //
   // Write code between the lines (below)
 
-
   let chessBoard = "";
   let rowCount = 1;
-  
-  for (let i = 1; i < 65; i++){
-    rowCount % 2 !== 0 ? (i % 2 !== 0 ? chessBoard += "#" : chessBoard += "_" ) : (i % 2 ==! 0 ? chessBoard += "_" : chessBoard += "#");   
-    if(i % 8 === 0){
+
+  for (let i = 1; i < 65; i++) {
+    rowCount % 2 !== 0
+      ? i % 2 !== 0
+        ? (chessBoard += "#")
+        : (chessBoard += "_")
+      : i % 2 == !0
+      ? (chessBoard += "_")
+      : (chessBoard += "#");
+    if (i % 8 === 0) {
       chessBoard += "\n";
       rowCount++;
-    } 
+    }
   }
   console.log(chessBoard);
 
-
-
-
+  //
 
   // Write code between the lines (above)
 
-
-/*   
+  /*   
 
 let chessBoard = "";
 let rowCount = 1;
@@ -77,17 +79,8 @@ let rowCount = 1;
 }
 */
 
+  // Once you are done type the following in the terminal to test your answer(s).
+  // yarn test exercise-11
 
-// Once you are done type the following in the terminal to test your answer(s).
-// yarn test exercise-11
-
-module.exports = exercise11;
-
+  module.exports = exercise11;
 }
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> 804d92e2b3be7621595098a0df3974ef550ced2c

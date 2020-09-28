@@ -19,8 +19,16 @@ function exercise13() {
   // (The numbers get big quickly!)
   //
   // Write code between the lines (below)
-  // -----------------------------------------------------------------
-  // -----------------------------------------------------------------
+
+  let fibArray = [0, 1, 1];
+  let currentNumber = 1;
+
+  for (let i = 3; i < 51; i++) {
+    currentNumber += fibArray[i - 2];
+    fibArray.push(currentNumber);
+  }
+  console.log(fibArray[49]);
+
   // Write code between the lines (above)
   //
   //

@@ -15,8 +15,9 @@ function exercise6_5() {
   // e.g. `${number} is odd`
   //
   // Write code between the lines (below)
-  // -----------------------------------------------------------------
-  // -----------------------------------------------------------------
+  for (let i = 0; i <= 10; i++) {
+    i % 2 === 0 ? console.log(`${i} even`) : console.log(`${i} odd`);
+  }
   // Write code between the lines (above)
   //
   //

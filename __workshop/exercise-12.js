@@ -16,8 +16,24 @@ function exercise12() {
   // EXPECTED OUTPUT: [2, 3, 5, 7, 11, 13, ...]
   //
   // Write code between the lines (below)
-  // -----------------------------------------------------------------
-  // -----------------------------------------------------------------
+
+  let primeNums = [1, 2];
+  let testNum = 0;
+
+  for (let i = 3; i < 201; i++) {
+    let prime = true;
+    for (let k = 2; k < i; k++) {
+      if (i % k === 0) {
+        prime = false;
+      }
+    }
+    if (prime) {
+      primeNums.push(i);
+    }
+  }
+
+  console.log(primeNums);
+
   // Write code between the lines (above)
   //
   //
@@ -29,5 +45,5 @@ function exercise12() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-12
-
+exercise12();
 module.exports = exercise12;
